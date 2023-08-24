@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:elevation="24dp"
+        app:cardBackgroundColor="@color/gray"
+        app:cardCornerRadius="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/id_Card_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+
+                android:src="@drawable/eletric_car"
+                app:layout_constraintBaseline_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/preco"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/preco"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <TextView
+                android:id="@+id/valor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="30.00000"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/preco"
+                app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+            <TextView
+                android:id="@+id/Bateria"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Bateria"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/preco"
+                app:layout_constraintTop_toBottomOf="@+id/valor" />
+
+            <TextView
+                android:id="@+id/Bateria_Valor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="300 KVh"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/Bateria"
+                app:layout_constraintTop_toBottomOf="@+id/valor" />
+
+            <TextView
+                android:id="@+id/Potencia"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Potencia"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/Bateria"
+                app:layout_constraintTop_toBottomOf="@+id/Bateria" />
+
+            <TextView
+                android:id="@+id/Potecia_Valor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/_300_cv"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/Potencia"
+                app:layout_constraintTop_toBottomOf="@+id/Bateria_Valor" />
+
+            <TextView
+                android:id="@+id/recarga"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/potencia"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/Potencia"
+                app:layout_constraintTop_toBottomOf="@+id/Potencia" />
+
+            <TextView
+                android:id="@+id/recarga_Valor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/_23_min"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/recarga"
+                app:layout_constraintTop_toBottomOf="@+id/Potecia_Valor" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
